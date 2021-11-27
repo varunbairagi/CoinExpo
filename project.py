@@ -87,4 +87,4 @@ st.markdown('''
 This webapp is using binance API 
 ''')
 
-st.info('Credit: Created by piro coder Varun Bairagi')
+st.info('Credit: GROUP 17 MINOR PROJECT')
