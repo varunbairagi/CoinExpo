@@ -1,4 +1,4 @@
-# This webapp is using binance API 
+# This WebApp is using Binance API 
 
 
 import streamlit as st
@@ -8,7 +8,7 @@ from PIL import Image
 image = Image.open("logo1.jpg")
 st.image(image,width=800)
 
-st.header('**Selected Price**')
+st.header('**Selected Prices**')
 
 # Load market data from Binance API
 df = pd.read_json('https://api.binance.com/api/v3/ticker/24hr')
@@ -79,12 +79,12 @@ col1.metric(col7_selection, col7_price, col7_percent)
 col2.metric(col8_selection, col8_price, col8_percent)
 col3.metric(col9_selection, col9_price, col9_percent)
 
-st.header('**All Price**')
+st.header('**All Prices**')
 
 st.dataframe(df)
 
 st.markdown('''
-This webapp is using binance API 
+This WebApp is using Binance API 
 ''')
 
 st.info('Credit: GROUP 17 MINOR PROJECT')
